@@ -1,34 +1,36 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>France Town Game</title>
+  <title>France Town Tycoon</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
 <body>
 
-
-  <header>
-    <h2>Welcome to the France Town Tycoon Game!</h2>
-    <p>Player: <span id="playerName">Player</span></p>
-    <p>Money: $<span id="money">0</span></p>
-  </header>
-
- 
-  <main>
-    <h3>Small House</h3>
-    <p>Level: <span id="houseLevel">1</span></p>
-    <p>Generates $<span id="houseReward">10</span> per click</p>
-
-    <button id="earnMoneyBtn">Generate Money</button>
-    <button id="upgradeHouseBtn">Upgrade House ($50)</button>
-  </main>
-
-  <script src="script.js"></script>
+<header>
+  <h2>France Town Tycoon</h2>
+  <p>Player: <span id="playerName"></span> Theme: <span id="themeName"></span></p>
+  <p>Money: $<span id="money">0</span></p>
+  <p>Instructions: Build your French town by collecting income from your buildings! You can eventually build the Eiffel Tower.</p>
+</header>
 
 
+<main>
+  <h3>Your Town</h3>
+  <div id="map"></div>
+
+  <div id="controls">
+    <h3>Actions</h3>
+    <button id="earnMoneyBtn">Collect Income</button>
+    <button id="buildHouseBtn">Build House ($20)</button>
+    <button id="buildCafeBtn">Build Café ($40)</button>
+    <button id="buildBridgeBtn">Build Bridge ($80)</button>
+    <button id="buildTowerBtn">Build Eiffel Tower ($500)</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
 
