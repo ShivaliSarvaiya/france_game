@@ -1,0 +1,24 @@
+body { font-family: Arial; text-align: center; }
+
+#map {
+  margin: 20px auto;
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.building {
+  margin: 5px;
+  padding: 10px;
+  background: lightblue;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* REQUIRED ANIMATION */
+.building.upgrade {
+  transform: scale(1.3);
+  background: gold;
+}

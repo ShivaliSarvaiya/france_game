@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>France Town Tycoon</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+  <script src="game.js"></script>
+  <script src="server.js"></script>
+</head>
+<body>
+
+<header>
+  <h2>🇫🇷 France Town Tycoon</h2>
+  <p>Player: <span id="playerName"></span></p>
+  <p>Money: $<span id="money"></span></p>
+  <button id="themeToggle">Toggle Day/Night</button>
+</header>
+
+<main>
+  <div id="map"></div>
+
+  <div id="controls">
+    <button onclick="addBuilding('house')">Build House ($20)</button>
+    <button onclick="addBuilding('cafe')">Build Café ($40)</button>
+    <button onclick="addBuilding('bridge')">Build Bridge ($80)</button>
+    <button id="earnBtn">Collect Income</button>
+  </div>
+</main>
+
+<script src="server.js"></script>
+</body>
+</html>
